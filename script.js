@@ -1,6 +1,5 @@
 async function fetchData() {
 	const data = await fetch('https://jsonplaceholder.typicode.com/todos');
-	console.log();
 	let dataJson = await data.json();
 	let elementHtml = document.querySelector('#fetch');
 
@@ -8,10 +7,9 @@ async function fetchData() {
 		let div = document.createElement('div');
 
 		for (const key in item) {
-			div.textContent += item[key];
+			div.innerHTML += `${key}: ${item[key]}<br>`;
 			elementHtml.insertAdjacentElement('beforeend', div);
 		}
-
 	}
 }
 
