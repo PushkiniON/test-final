@@ -1,0 +1,10 @@
+.text-input {
+	padding: 5px 10px;
+	background-color: #f5f5f5;
+	border-radius: 12px;
+	transition: padding 0.6s;
+}
+
+.text-input:hover {
+	padding: 10px 15px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<form>
+			<div>
+				<input
+					class="text-input"
+					type="email"
+					name="email"
+					id="email"
+					required
+					placeholder="email@email.com"
+				/>
+			</div>
+			<div>
+				<input
+					class="text-input"
+					type="password"
+					name="password"
+					id="password"
+					required
+					minlength="3"
+					placeholder="Password"
+				/>
+			</div>
+			<div>
+				<input class="text-input" type="date" name="date" id="date" required />
+			</div>
+			<div>
+				<label for="checkbox"
+					>Am citit și sunt de acord cu termenii și condițiile de
+					utilizare</label
+				>
+				<input type="checkbox" name="checkbox" id="checkbox" required />
+			</div>
+			<button type="submit">Trimite</button>
+		</form>
+		<div id="fetch"></div>
+	</body>
+</html>
+<script src="script.js"></script>
